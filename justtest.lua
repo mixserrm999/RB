@@ -27,8 +27,8 @@ wait(6)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(75, 1015, -1190)
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1078, 751, 311)
+end
 DiscordLib:Notification("Notification", "AutoCoin", "Okay!")
-      end
 end)
 
 btns:Seperator()
