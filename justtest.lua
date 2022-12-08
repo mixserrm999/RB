@@ -45,6 +45,7 @@ wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1078, 751, 311)
 DiscordLib:Notification("Notification", "Auto-farm", "Okay!")
 end
+end
 end)
 
 --local sldrs = serv:Channel("Sliders")
