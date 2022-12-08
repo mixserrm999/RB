@@ -12,7 +12,7 @@ local serv = win:Server("Preview", "")
 
 --ตัวแปรปุ่มฟังชั่น--
 local btns = serv:Channel("กดเข้ามา")
-btns:button("hi", function()
+btns:Button("hi", function()
 end)
 --ตัวแปรปุ่มฟังชั่น--
 
