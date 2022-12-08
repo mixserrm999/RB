@@ -11,7 +11,9 @@ local serv = win:Server("Preview", "")
 --รวมหมวดหมุ่ฟังชั่น--
 
 --ตัวแปรปุ่มฟังชั่น--
---local btns = serv:Channel("กดเข้ามา")
+local btns = serv:Channel("กดเข้ามา")
+btns:button("hi",function()
+    end)
 --ตัวแปรปุ่มฟังชั่น--
 
 --สร้างปุ้ม--
