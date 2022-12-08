@@ -15,9 +15,9 @@ local btns = serv:Channel("กดเข้ามา")
 --ตัวแปรปุ่มฟังชั่น--
 
 --สร้างปุ้ม--
-btns:Button("ออโต้สุ่ม", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/https://raw.githubusercontent.com/78n/Amity/main/RBBattles.lua"))()
-DiscordLib:Notification("Notification", "ออโต้สุ่ม", "Okay!")
+btns:Button("AutoCoin", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/78n/Amity/main/RBBattles.lua"))()
+DiscordLib:Notification("Notification", "AutoCoin", "Okay!")
 end)
 
 btns:Seperator()
