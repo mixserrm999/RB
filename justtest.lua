@@ -11,25 +11,14 @@ local serv = win:Server("Preview", "")
 --รวมหมวดหมุ่ฟังชั่น--
 
 --ตัวแปรปุ่มฟังชั่น--
-local btns = serv:Channel("กดเข้ามา")
+--local btns = serv:Channel("กดเข้ามา")
 --ตัวแปรปุ่มฟังชั่น--
 
 --สร้างปุ้ม--
 --btns:Button("AutoCoin", function()
---local vim = game:GetService("VirtualInputManager")
---while wait(3) do
---game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1078, 751, 311)
-wait(0.1)
-vim:SendKeyEvent(true, "E", false, nil)
-wait(0.1)
-vim:SendKeyEvent(false, "E", false, nil)
-wait(6)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(75, 1015, -1190)
-wait(0.1)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1078, 751, 311)
-end
-DiscordLib:Notification("Notification", "AutoCoin", "Okay!")
-end)
+
+--DiscordLib:Notification("Notification", "AutoCoin", "Okay!")
+--end)
 
 btns:Seperator()
 
