@@ -15,10 +15,10 @@ local btns = serv:Channel("กดเข้ามา")
 --ตัวแปรปุ่มฟังชั่น--
 
 --สร้างปุ้ม--
-btns:Button("AutoCoin", function()
-local vim = game:GetService("VirtualInputManager")
-while wait(3) do
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1078, 751, 311)
+--btns:Button("AutoCoin", function()
+--local vim = game:GetService("VirtualInputManager")
+--while wait(3) do
+--game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1078, 751, 311)
 wait(0.1)
 vim:SendKeyEvent(true, "E", false, nil)
 wait(0.1)
@@ -37,11 +37,24 @@ btns:Seperator()
 --DiscordLib:Notification("Notification", "Max level!", "Okay!")
 --end)--
 
---local tgls = serv:Channel("Toggles")--
+local tgls = serv:Channel("Auto-farm")
 
---tgls:Toggle("Auto-Farm",false, function(bool)
---print(bool)
---end)
+tgls:Toggle("Auto-Farm",false, function(autof)
+_G.Autofarm = autof
+local vim = game:GetService("VirtualInputManager")
+while _G.autofarm do wait(3)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1078, 751, 311)
+wait(0.1)
+vim:SendKeyEvent(true, "E", false, nil)
+wait(0.1)
+vim:SendKeyEvent(false, "E", false, nil)
+wait(6)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(75, 1015, -1190)
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1078, 751, 311)
+DiscordLib:Notification("Notification", "Auto-farm", "Okay!")
+end
+end)
 
 --local sldrs = serv:Channel("Sliders")
 
