@@ -12,8 +12,8 @@ local serv = win:Server("Preview", "")
 
 --ตัวแปรปุ่มฟังชั่น--
 local btns = serv:Channel("กดเข้ามา")
-btns:button("hi",function()
-    end)
+btns:button("hi", function()
+end)
 --ตัวแปรปุ่มฟังชั่น--
 
 --สร้างปุ้ม--
@@ -44,6 +44,7 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(75, 1015
 wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1078, 751, 311)
 DiscordLib:Notification("Notification", "Auto-farm", "Okay!")
+end
 end
 end)
 
