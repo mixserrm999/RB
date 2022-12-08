@@ -16,8 +16,19 @@ local btns = serv:Channel("กดเข้ามา")
 
 --สร้างปุ้ม--
 btns:Button("AutoCoin", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/78n/Amity/main/RBBattles.lua"))()
+local vim = game:GetService("VirtualInputManager")
+while wait(3) do
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1078, 751, 311)
+wait(0.1)
+vim:SendKeyEvent(true, "E", false, nil)
+wait(0.1)
+vim:SendKeyEvent(false, "E", false, nil)
+wait(6)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(75, 1015, -1190)
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1078, 751, 311)
 DiscordLib:Notification("Notification", "AutoCoin", "Okay!")
+      end
 end)
 
 btns:Seperator()
