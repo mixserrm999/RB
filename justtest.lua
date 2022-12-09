@@ -11,23 +11,6 @@ local serv = win:Server("Preview", "")
 --รวมหมวดหมุ่ฟังชั่น--
 
 --ตัวแปรปุ่มฟังชั่น--
---local btns = serv:Channel("กดเข้ามา")
---btns:Button("hi", function()
---end)
---ตัวแปรปุ่มฟังชั่น--
-
---สร้างปุ้ม--
---btns:Button("AutoCoin", function()
-
---DiscordLib:Notification("Notification", "AutoCoin", "Okay!")
---end)
-
-btns:Seperator()
-
---btns:Button("Get max level", function()
---DiscordLib:Notification("Notification", "Max level!", "Okay!")
---end)--
-
 local tgls = serv:Channel("Auto-farm")
 tgls:Toggle("Auto-Farm",false, function(autof)
 G.Autofarm = autof
@@ -47,22 +30,6 @@ end
 end
 end)
 
---local sldrs = serv:Channel("Sliders")
-
---local sldr = sldrs:Slider("Slide me!", 0, 1000, 400, function(t)
---print(t)
---end)
-
---sldrs:Button("Change to 50", function()
---sldr:Change(50)
---end)
-
---local drops = serv:Channel("Dropdowns")
-
-
---local drop = drops:Dropdown("Pick me!",{"Option 1","Option 2","Option 3","Option 4","Option 5"}, function(bool)
---print(bool)
---end)
 
 drops:Button("Clear", function()
 drop:Clear()
@@ -71,18 +38,6 @@ end)
 drops:Button("Add option", function()
 drop:Add("Option")
 end)
-
---local clrs = serv:Channel("Colorpickers")
-
---:Colorpicker("ESP Color", Color3.fromRGB(255,1,1), function(t)
---print(t)
---end)
-
---local textbs = serv:Channel("Textboxes")
-
---textbs:Textbox("Gun power", "Type here!", true, function(t)
---print(t)
---end)
 
 --Labels--
 local lbls = serv:Channel("Credits TBMods")
